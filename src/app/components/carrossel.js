@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import styles from "./Carrossel.module.css";
-import '../global.css';
 
 export default function Carrossel() {
   const slides = [
@@ -37,6 +36,7 @@ export default function Carrossel() {
   return (
     <div className={styles.carrossel}>
       <div className={styles.imagemContainer}>
+        <div className={styles.overlay}></div>
         <img
           src={slides[indiceAtual].imagem}
           alt={`Slide ${indiceAtual + 1}`}
@@ -50,12 +50,24 @@ export default function Carrossel() {
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`${styles.botao} ${
-              index === indiceAtual ? styles.ativo : ""
-            }`}
+            className={`${styles.botao} ${index === indiceAtual ? styles.ativo : ""}`}
             onClick={() => irParaSlide(index)}
           ></button>
         ))}
+      </div>
+      <div className={styles.navegacao}>
+        <button
+          className={styles.setaEsquerda}
+          onClick={() => irParaSlide((indiceAtual - 1 + slides.length) % slides.length)}
+        >
+          ❮
+        </button>
+        <button
+          className={styles.setaDireita}
+          onClick={() => irParaSlide((indiceAtual + 1) % slides.length)}
+        >
+          ❯
+        </button>
       </div>
     </div>
   );

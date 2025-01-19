@@ -1,5 +1,4 @@
 import Link from "next/link"
-import './global.css';
 
 export default function EmpresaPage() {
     return (
@@ -7,6 +6,7 @@ export default function EmpresaPage() {
         <nav>
         <Link href={"/"}>Home</Link>
         <Link href={"/empresa"}>Empresa</Link>
+        <Link href={"/contato"}>Contato</Link>
       </nav>
       <section>
         <h1>Sobre Nós</h1>
