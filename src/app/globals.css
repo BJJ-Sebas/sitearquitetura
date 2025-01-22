@@ -5,46 +5,50 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-size: 16px;
+}
 /*---------------------------------------------- Textos ------------------------------------------- */
 .texto1 {
   text-align: center;
-  padding: 50px 20px;
+  padding: 40px 20px;
   background: #2D2D2A;
 }
 
 .texto1 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #F4D06F;
   margin-bottom: 10px;
 }
 
 .texto1 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #F4D06F;
 }
 .texto2 {
   text-align: center;
-  padding: 50px 20px;
+  padding: 40px 20px;
   background: #202124;
-  border-radius: 100px;
-  margin-bottom: 50px;
+  border-radius: 15px;
+  margin-bottom: 30px;
   color:#EEC643
 }
 
 .texto2 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #EEC643;
   margin-bottom: 10px;
 }
 
 .texto2 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #EEC643;
 }
 
 /*------------------------------------------- Layout Geral--------------------------------------- */
 .contato-page {
-  padding: 40px;
+  padding: 20px;
   max-width: 1200px;
   margin: auto;
 }
@@ -52,30 +56,30 @@
 /*--------------------------------------- Boxes de Destaque para os Serviços ----------------------*/
 .servicos-container {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .servicos-container h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
 .boxes-servicos {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .box-servico {
-  flex: 1;
+  flex: 1 1 calc(50% - 20px);
   min-width: 250px;
   background: #202124;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #EEC643;
 }
 
@@ -100,12 +104,12 @@
 }
 
 .obra-item {
+  max-width: 90%;
   background: #333;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
-  max-width: 500px;
 }
 
 .obra-item img {
@@ -133,17 +137,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .sobre-mim img {
-  max-width: 300px;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .sobre-mim-texto {
   flex: 1;
+  text-align: center;
 }
 
 .sobre-mim h2 {
@@ -160,17 +166,17 @@
 /*----------------------------------------------------Contato Destaque----------------------------------*/
 .destaque-contato {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
   flex-wrap: wrap;
-  margin-top: 50px;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
 }
 
 .destaque-box {
-  flex: 1;
-  min-width: 250px;
+  flex: 1 1 calc(50% - 20px);
+  min-width: 200px;
   background: #2D2D2A;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -178,16 +184,18 @@
 }
 
 .destaque-box p {
+  font-size: 0.9rem;
   margin: 10px 0 0;
   font-size: 1.1rem;
 }
 
-.destaque-box a {
+.destaque-box svg {
+  font-size: 1.5rem;
   color: royalblue;
   text-decoration: none;
 }
 
-.destaque-box a:hover {
+.destaque-box svg:hover {
   text-decoration: underline;
 }
 
@@ -223,6 +231,12 @@
     padding: 30px 15px;
     font-size: 1rem;
   }
+  .texto1 h1, .texto2 h1 {
+    font-size: 1.8rem;
+  }
+  .texto1 p, .texto2 p {
+    font-size: 0.9rem;
+  }
 
   .boxes-servicos {
     flex-direction: column;
@@ -250,6 +264,14 @@
   .destaque-contato {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .destaque-box {
+    width: 100%;
+  }
+
+  .destaque-box svg {
+    font-size: 1.2rem;
   }
 
   .obra-item {
