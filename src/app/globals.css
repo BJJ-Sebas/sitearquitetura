@@ -1,217 +1,268 @@
+/*---------------------------------------------- Geral --------------------------------------------- */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo para a barra de navegação */
-nav {
-    display: flex;
-    justify-content: flex-end;
-    /* Alinha os itens à direita */
-    gap: 2rem;
-    /* Espaçamento entre os links */
-    padding: 1rem;
-    background: transparent;
-    /* Fundo transparente */
-    position: absolute;
-    /* Para posicionamento no topo */
-    top: 0;
-    right: 0;
-    z-index: 100;
-}
-
-/* Estilo para os links */
-nav a {
-    text-decoration: none;
-    /* Remove o sublinhado */
-    color: whitesmoke;
-    /* Cor branca para o texto */
-    font-size: 1rem;
-    /* Tamanho da fonte */
-    font-weight: bold;
-    /* Negrito */
-    position: relative;
-    /* Necessário para o triângulo */
-    text-transform: uppercase;
-    /* Deixa o texto em letras maiúsculas */
-}
-
-/* Triângulo decorativo */
-nav a::after {
-    content: '';
-    /* Pseudo-elemento vazio */
-    position: absolute;
-    bottom: -5px;
-    /* Espaço entre o texto e o triângulo */
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: 5px solid transparent;
-    /* Lado esquerdo do triângulo */
-    border-right: 5px solid transparent;
-    /* Lado direito do triângulo */
-    border-top: 5px solid white;
-    /* Topo do triângulo */
-    opacity: 0;
-    /* Triângulo invisível inicialmente */
-    transition: opacity 0.3s ease-in-out;
-    /* Animação */
-}
-
-/* Exibe o triângulo ao passar o mouse */
-nav a:hover::after {
-    opacity: 1;
-    /* Triângulo visível */
-}
-
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        /* Links empilhados */
-        justify-content: center;
-        /* Alinha ao centro */
-        gap: 1rem;
-        padding: 1rem;
-    }
-}
-
-.whatsapp-icon {
-  position: fixed; /* Faz o botão acompanhar o scroll */
-  bottom: 20px; /* Distância da parte inferior da tela */
-  right: 20px; /* Distância do lado direito da tela */
-  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
-  background-color: #25d366; /* Cor de fundo do WhatsApp */
-  width: 60px;
-  height: 60px;
-  border-radius: 50%; /* Deixa o botão redondo */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para um visual moderno */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.whatsapp-icon img {
-  width: 100%; /* Tamanho proporcional do ícone dentro do botão */
-  height: 100%;
-}
-
-.whatsapp-icon:hover {
-  transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Adiciona mais sombra ao hover */
-}
-
-/* ----------------------------------------- Contato -----------------------------------------------*/
-/* Geral */
-.contato-page {
   font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*---------------------------------------------- Textos ------------------------------------------- */
+.texto1 {
+  text-align: center;
+  padding: 50px 20px;
+  background: #202124;
 }
 
-.mapa-container {
-  width: 100%;
-  height: 400px;
-  margin-bottom: 40px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.texto1 h1 {
+  font-size: 2.5rem;
+  color: #EEC643;
+  margin-bottom: 10px;
 }
 
-.contato-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 30px;
-  background: #fff;
+.texto1 p {
+  font-size: 1.2rem;
+  color: #EEC643;
+}
+.texto2 {
+  text-align: center;
+  padding: 50px 20px;
+  background: #202124;
+  border-radius: 100px;
+  margin-bottom: 50px;
+  color:#EEC643
+}
+
+.texto2 h1 {
+  font-size: 2.5rem;
+  color: #EEC643;
+  margin-bottom: 10px;
+}
+
+.texto2 p {
+  font-size: 1.2rem;
+  color: #EEC643;
+}
+
+/*------------------------------------------- Layout Geral--------------------------------------- */
+.contato-page {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*--------------------------------------- Boxes de Destaque para os Serviços ----------------------*/
+.servicos-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.servicos-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.boxes-servicos {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box-servico {
+  flex: 1;
+  min-width: 250px;
+  background: #202124;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.1rem;
+  color: #EEC643;
+}
+
+/*-------------------------------------------- Obras --------------------------------------------- */
+.obras-recentes {
+  padding: 50px 20px;
+  background-color: #202124;
+  color: #EEC643;
   text-align: center;
 }
 
-.contato-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #007BFF;
-}
-
-.contato-container p {
-  font-size: 1.2rem;
-  color: #666;
+.obras-recentes h2 {
+  font-size: 2rem;
   margin-bottom: 30px;
 }
 
-.info-contato {
-  text-align: left;
-  margin-bottom: 40px;
-}
-
-.info-contato p {
-  margin: 10px 0;
-  font-size: 1rem;
+.obras-lista {
   display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.info-contato p svg {
-  color: #007BFF;
-  font-size: 1.5rem;
-}
-
-/* Formulário */
-.form-contato {
-  display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
-.input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.obra-item {
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.obra-item img {
+  width: 100%;
+  height: auto;
+}
+
+.obra-detalhes {
+  padding: 15px;
   text-align: left;
 }
 
-.input-group label {
-  font-weight: bold;
-  color: #555;
+.obra-detalhes p {
+  margin: 5px 0;
 }
 
-.input-group input,
-.input-group textarea {
-  width: 100%;
-  padding: 12px 15px;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+/*----------------------------------------------- Sobre Mim ----------------------------------------- */
+.sobre-mim {
+  padding: 50px 20px;
+  background-color: #202124;
+  color: #EEC643;
 }
 
-.input-group input:focus,
-.input-group textarea:focus {
-  border-color: #007BFF;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+.sobre-mim-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
 }
 
-button {
-  padding: 15px 20px;
-  font-size: 1rem;
-  color: white;
-  background-color: #007BFF;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
-  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+.sobre-mim img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
-  background-color: #0056b3;
-  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+.sobre-mim-texto {
+  flex: 1;
+}
+
+.sobre-mim h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.sobre-mim p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+
+/*----------------------------------------------------Contato Destaque----------------------------------*/
+.destaque-contato {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.destaque-box {
+  flex: 1;
+  min-width: 250px;
+  background: #202124;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #EEC643;
+}
+
+.destaque-box p {
+  margin: 10px 0 0;
+  font-size: 1.1rem;
+}
+
+.destaque-box a {
+  color: royalblue;
+  text-decoration: none;
+}
+
+.destaque-box a:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------------------------Ícone do WhatsApp-----------------------------------*/
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background-color: greenyellow;
+}
+
+.whatsapp-icon img:hover {
+  transform: scale(1.1);
+}
+
+/*------------------------------------------------------Mapa---------------------------------------------*/
+.mapa-container iframe {
+  border-radius: 10px;
+}
+
+/*------------------------------------------------ Mobile ------------------------------------------------*/
+@media (max-width: 768px) {
+  .texto1, .texto2 {
+    padding: 30px 15px;
+    font-size: 1rem;
+  }
+
+  .boxes-servicos {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .box-servico {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .obras-lista {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sobre-mim-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .destaque-contato {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .obra-item {
+    max-width: 100%;
+  }
+
+  .whatsapp-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }

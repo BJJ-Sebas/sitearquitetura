@@ -6,15 +6,15 @@ import styles from "./Carrossel.module.css";
 export default function Carrossel() {
   const slides = [
     {
-      imagem: "/image1.png",
+      imagem: "/image1.jpeg",
       texto: "Transformando ideias em realidade.",
     },
     {
-      imagem: "/image2.png",
+      imagem: "/image2.jpeg",
       texto: "Projetos que inovam e inspiram.",
     },
     {
-      imagem: "/image3.png",
+      imagem: "/image3.jpeg",
       texto: "Soluções eficientes para o futuro.",
     },
   ];
