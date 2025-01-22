@@ -145,14 +145,14 @@ export default function HomePage() {
 
         {/*------------------------------------ Mapa --------------------------------------------------*/}
         <div className="mapa-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.719228618527!2d-122.0842494844192!3d37.42206597982774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5a5e7e2f7e1%3A0x6f0d79f9a3b80736!2sGoogleplex!5e0!3m2!1sen!2sbr!4v1615470182993!5m2!1sen!2sbr"
-            width="100%"
-            height="400"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
+        <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.0962108701137!2d-48.464870389061325!3d-27.43511217624098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952743971702b305%3A0x62c38f26ffc0dfad!2sR.%20Mario%20Lacombe%2C%20101%20-%20Canasvieiras%2C%20Florian%C3%B3polis%20-%20SC%2C%2088054-260!5e0!3m2!1sen!2sbr!4v1737586424338!5m2!1sen!2sbr"
+         width="100%"
+         height="400" 
+         style={{border:0}} 
+         allowfullscreen=""
+         loading="lazy">
+         </iframe>
         </div>
       </section>
 

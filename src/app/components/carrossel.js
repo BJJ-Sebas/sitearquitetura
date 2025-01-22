@@ -7,7 +7,7 @@ export default function Carrossel() {
   const slides = [
     {
       imagem: "/image1.jpeg",
-      texto: "Transformando ideias em realidade.",
+      texto: "Fazendo sonhos virar realidade.",
     },
     {
       imagem: "/image2.jpeg",
@@ -20,6 +20,7 @@ export default function Carrossel() {
   ];
 
   const [indiceAtual, setIndiceAtual] = useState(0);
+  const [startX, setStartX] = useState(null);
 
   // Troca automática dos slides
   useEffect(() => {
@@ -33,8 +34,40 @@ export default function Carrossel() {
     setIndiceAtual(index);
   };
 
+  // Funções de detecção de swipe
+  const handleTouchStart = (e) => {
+    setStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!startX) return;
+
+    const currentX = e.touches[0].clientX;
+    const diff = startX - currentX;
+
+    if (Math.abs(diff) > 50) { // Define a sensibilidade do swipe
+      if (diff > 0) {
+        // Swipe para a esquerda (próximo slide)
+        setIndiceAtual((prev) => (prev + 1) % slides.length);
+      } else {
+        // Swipe para a direita (slide anterior)
+        setIndiceAtual((prev) => (prev - 1 + slides.length) % slides.length);
+      }
+      setStartX(null); // Reseta o estado após a ação
+    }
+  };
+
+  const handleTouchEnd = () => {
+    setStartX(null);
+  };
+
   return (
-    <div className={styles.carrossel}>
+    <div
+      className={styles.carrossel}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       <div className={styles.imagemContainer}>
         <div className={styles.overlay}></div>
         <img
