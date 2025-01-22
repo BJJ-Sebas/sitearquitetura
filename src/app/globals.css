@@ -9,18 +9,18 @@
 .texto1 {
   text-align: center;
   padding: 50px 20px;
-  background: #202124;
+  background: #2D2D2A;
 }
 
 .texto1 h1 {
   font-size: 2.5rem;
-  color: #EEC643;
+  color: #F4D06F;
   margin-bottom: 10px;
 }
 
 .texto1 p {
   font-size: 1.2rem;
-  color: #EEC643;
+  color: #F4D06F;
 }
 .texto2 {
   text-align: center;
@@ -125,8 +125,8 @@
 /*----------------------------------------------- Sobre Mim ----------------------------------------- */
 .sobre-mim {
   padding: 50px 20px;
-  background-color: #202124;
-  color: #EEC643;
+  background-color: #2D2D2A;
+  color: #F4D06F;
 }
 
 .sobre-mim-content {
@@ -169,7 +169,7 @@
 .destaque-box {
   flex: 1;
   min-width: 250px;
-  background: #202124;
+  background: #2D2D2A;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
