@@ -282,8 +282,8 @@ body {
     max-width: 100%;
   }
 
-  .icone {
-    font-size: 16px;
+  svg {
+    font-size: 16px; 
   }
 
   .whatsapp-icon img {
