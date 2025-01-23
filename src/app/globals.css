@@ -254,6 +254,8 @@ body {
     align-items: center;
     font-size: 1rem;
     padding: 15px;
+    width: 24px;
+    height: auto;
   }
 
   .obras-lista {
