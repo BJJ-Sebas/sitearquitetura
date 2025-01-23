@@ -19,12 +19,14 @@ body {
 .texto1 h1 {
   font-size: 2rem;
   color: #FFD972;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
 .texto1 p {
   font-size: 1rem;
   color: #F4D06F;
+  font-weight: bold;
 }
 .texto2 {
   text-align: center;
@@ -32,18 +34,21 @@ body {
   background: #202124;
   border-radius: 15px;
   margin-bottom: 30px;
-  color:#EEC643
+  color: #F4D06F;
+  font-weight: bold;
 }
 
 .texto2 h1 {
   font-size: 2rem;
-  color: #EEC643;
+  color: #F4D06F;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
 .texto2 p {
   font-size: 1rem;
-  color: #EEC643;
+  color: #F4D06F;
+  font-weight: bold;
 }
 
 /*------------------------------------------- Layout Geral--------------------------------------- */
@@ -80,14 +85,16 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 1rem;
-  color: #EEC643;
+  color: #F4D06F;
+  font-weight: bold;
 }
 
 /*-------------------------------------------- Obras --------------------------------------------- */
 .obras-recentes {
   padding: 50px 20px;
   background-color: #202124;
-  color: #EEC643;
+  color: #F4D06F;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -131,6 +138,7 @@ body {
   padding: 50px 20px;
   background-color: #2D2D2A;
   color: #F4D06F;
+  font-weight: bold;
 }
 
 .sobre-mim-content {
@@ -181,7 +189,8 @@ body {
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: #EEC643;
+  color: #F4D06F;
+  font-weight: bold;
 }
 
 .destaque-box p {
@@ -192,7 +201,7 @@ body {
 
 .destaque-box svg {
   font-size: 1.5rem;
-  color: royalblue;
+  color: #FFB140;
   text-decoration: none;
 }
 
