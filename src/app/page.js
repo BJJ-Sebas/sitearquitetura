@@ -133,7 +133,7 @@ export default function HomePage() {
               <p>Rua Mário Lacombe 101 - Canasvieiras, Florianópolis</p>
             </div>
             <div className="destaque-box">
-              <FontAwesomeIcon icon={faInstagram} size="1x" />
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
               <p>
                 <a href="https://instagram.com/danielefrick" target="_blank" rel="noopener noreferrer">
                   @danielefrick

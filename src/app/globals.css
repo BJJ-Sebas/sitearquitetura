@@ -283,9 +283,9 @@ body {
     max-width: 100%;
   }
 
-  .svg-inline--fa {
-    font-size: 1.5rem;
-    width: auto; 
+  svg.svg-inline--fa.fa-phone.fa-2x {
+    width: 24px;
+    height: auto;
   }
 
   .whatsapp-icon img {
