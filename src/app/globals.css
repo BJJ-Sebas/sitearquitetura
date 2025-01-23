@@ -288,6 +288,51 @@ body {
     height: auto;
   }
 
+  svg.svg-inline--fa.fa-envelope.fa-2x {
+    width: 24px;
+    height: auto;
+  }
+
+  svg.svg-inline--fa.fa-check.fa-2x {
+    width: 24px;
+    height: auto;
+  }
+
+  svg.svg-inline--fa.fa-building.fa-2x {
+    width: 24px;
+    height: auto;
+  }
+
+  svg.svg-inline--fa.fa-user-check.fa-2x {
+    width: 24px;
+    height: auto;
+  }
+
+  svg.svg-inline--fa.fa-handshake-simple.fa-2x {
+    width: 24px;
+    height: auto;
+  }
+
+  svg.svg-inline--fa.fa-file-lines.fa-2x {
+    width: 24px;
+    height: auto;
+  }
+
+  svg.svg-inline--fa.fa-comment-dots.fa-2x {
+    width: 24px;
+    height: auto;
+  }
+
+  svg.svg-inline--fa.fa-map-marker-alt.fa-2x {
+    width: 24px;
+    height: auto;
+  }
+
+  svg.svg-inline--fa.fa-instagram.fa-2x {
+    width: 24px;
+    height: auto;
+  }
+
   .whatsapp-icon img {
     width: 50px;
     height: 50px;
