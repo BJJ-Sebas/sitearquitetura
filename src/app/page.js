@@ -16,6 +16,17 @@ export default function HomePage() {
         <p>Estamos comprometidos em oferecer o melhor serviço e inovadoras para o cliente.</p>
       </section>
 
+      <FontAwesomeIcon icon={faPhone} className="icone" />
+      <FontAwesomeIcon icon={faEnvelope} className="icone" />
+      <FontAwesomeIcon icon={faCheck} className="icone" />
+      <FontAwesomeIcon icon={faBuilding} className="icone" />
+      <FontAwesomeIcon icon={faUserCheck} className="icone" />
+      <FontAwesomeIcon icon={faHandshakeSimple} className="icone" />
+      <FontAwesomeIcon icon={faFileLines} className="icone" />
+      <FontAwesomeIcon icon={faCommentDots} className="icone" />
+      <FontAwesomeIcon icon={faMapMarkerAlt} className="icone" />
+      <FontAwesomeIcon icon={faInstagram} className="icone" />
+
 {/*---------------------------------------------- obras ---------------------------------------------------*/}
       <section className="obras-recentes">
         <h2>Obras Recentes</h2>
@@ -150,7 +161,6 @@ export default function HomePage() {
          width="100%"
          height="400" 
          style={{border:0}} 
-         allowfullscreen=""
          loading="lazy">
          </iframe>
         </div>
