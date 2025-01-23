@@ -254,8 +254,6 @@ body {
     align-items: center;
     font-size: 1rem;
     padding: 15px;
-    width: 24px;
-    height: auto;
   }
 
   .obras-lista {
@@ -285,8 +283,9 @@ body {
     max-width: 100%;
   }
 
-  .fa-icon svg {
-    font-size: 1rem; 
+  .svg-inline--fa {
+    font-size: 1.5rem;
+    width: auto; 
   }
 
   .whatsapp-icon img {
