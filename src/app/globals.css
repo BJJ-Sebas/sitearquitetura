@@ -18,7 +18,7 @@ body {
 
 .texto1 h1 {
   font-size: 2rem;
-  color: #F4D06F;
+  color: #FFD972;
   margin-bottom: 10px;
 }
 
@@ -104,12 +104,12 @@ body {
 }
 
 .obra-item {
-  max-width: 90%;
   background: #333;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
+  max-width: 500px;
 }
 
 .obra-item img {
