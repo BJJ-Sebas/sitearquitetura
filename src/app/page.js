@@ -15,7 +15,7 @@ export default function HomePage() {
         <h1>Bem-vindo à Engenharia Daniele Frick</h1>
         <p>Estamos comprometidos em oferecer o melhor serviço e inovadoras para o cliente.</p>
       </section>
-      
+
 {/*---------------------------------------------- obras ---------------------------------------------------*/}
       <section className="obras-recentes">
         <h2>Obras Recentes</h2>
@@ -133,7 +133,7 @@ export default function HomePage() {
               <p>Rua Mário Lacombe 101 - Canasvieiras, Florianópolis</p>
             </div>
             <div className="destaque-box">
-              <FontAwesomeIcon icon={faInstagram} size="2x" />
+              <FontAwesomeIcon icon={faInstagram} size="1x" />
               <p>
                 <a href="https://instagram.com/danielefrick" target="_blank" rel="noopener noreferrer">
                   @danielefrick
