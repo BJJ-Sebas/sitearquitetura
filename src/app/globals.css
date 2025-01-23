@@ -337,6 +337,11 @@ body {
     height: auto;
   }
 
+  svg.svg-inline--fa.fa-location-dot.fa-2x {
+    width: 24px;
+    height: auto;
+  }
+
   svg.svg-inline--fa.fa-instagram.fa-2x {
     width: 24px;
     height: auto;
