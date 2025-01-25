@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 import Carrossel from "./components/carrossel";
 import './globals.css';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faCheck, faBuilding, faUserCheck, faHandshakeSimple, faFileLines, faCommentDots, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, } from "@fortawesome/free-brands-svg-icons";
@@ -19,9 +20,9 @@ export default function HomePage() {
 
   const numLines = window.innerWidth <= 768 ? 10 : 30;
 
-  seEffect(() => {
+  useEffect(() => {
     if (typeof window !== 'undefined') {
-      // Agora podemos usar o window com segurança
+      // Agora podemos usar o window com segurança no cliente
       const numLines = window.innerWidth <= 768 ? 10 : 30; // Definir número de linhas com base no tamanho da tela
       const backgroundElement = document.querySelector('.background');
       
