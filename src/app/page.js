@@ -4,7 +4,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 import Carrossel from "./components/carrossel";
-import React, { useEffect } from 'react';
 import './globals.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faCheck, faBuilding, faUserCheck, faHandshakeSimple, faFileLines, faCommentDots, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
