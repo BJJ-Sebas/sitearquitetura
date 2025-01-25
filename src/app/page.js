@@ -1,4 +1,6 @@
-"use client";
+"use client"; if (typeof window !== "undefined") {
+
+}
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 import Carrossel from "./components/carrossel";
@@ -18,19 +20,21 @@ export default function HomePage() {
 
   const numLines = window.innerWidth <= 768 ? 10 : 30;
 
-  useEffect(() => {
-    // Cria várias linhas dinamicamente
-    const numLines = 50; // Número de linhas
-    const backgroundElement = document.querySelector('.background');
-
-    for (let i = 0; i < numLines; i++) {
-      const line = document.createElement('div');
-      line.classList.add('line');
-      // Posicionar aleatoriamente as linhas
-      line.style.left = `${Math.random() * 100}vw`; // Posição horizontal
-      line.style.animationDuration = `${Math.random() * 2 + 1}s`; // Duração aleatória para variação
-
-      backgroundElement.appendChild(line);
+  seEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Agora podemos usar o window com segurança
+      const numLines = window.innerWidth <= 768 ? 10 : 30; // Definir número de linhas com base no tamanho da tela
+      const backgroundElement = document.querySelector('.background');
+      
+      for (let i = 0; i < numLines; i++) {
+        const line = document.createElement('div');
+        line.classList.add('line');
+        // Posicionar aleatoriamente as linhas
+        line.style.left = `${Math.random() * 100}vw`; // Posição horizontal
+        line.style.animationDuration = `${Math.random() * 2 + 1}s`; // Duração aleatória para variação
+  
+        backgroundElement.appendChild(line);
+      }
     }
   }, []);
 
