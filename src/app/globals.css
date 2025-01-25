@@ -383,8 +383,8 @@ body {
   }
   .line {
     width: 1px;  /* Largura da linha reduzida */
-    height: 60px; /* Comprimento da linha reduzido */
-    opacity: 0.4;  /* Menos opacidade para mobile */
+    height: 90px; /* Comprimento da linha reduzido */
+    opacity: 0.8;  /* Menos opacidade para mobile */
     animation: lineMovement 4s linear infinite; /* Animação mais lenta no mobile */
   }
 
