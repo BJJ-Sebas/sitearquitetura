@@ -1,14 +1,15 @@
-"use client"; if (typeof window !== "undefined") {
+"use client";
 
-}
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-import Carrossel from "./components/carrossel";
+import dynamic from 'next/dynamic';
 import './globals.css';
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faCheck, faBuilding, faUserCheck, faHandshakeSimple, faFileLines, faCommentDots, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, } from "@fortawesome/free-brands-svg-icons";
+
+const Carrossel = dynamic(() => import('./components/carrossel'), { ssr: false });
 
 export default function HomePage() {
 
@@ -17,6 +18,7 @@ export default function HomePage() {
       <div key={index} className="line"></div>
     ));
   };
+
 
   const numLines = window.innerWidth <= 768 ? 10 : 30;
 
