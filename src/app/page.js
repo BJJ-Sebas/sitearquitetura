@@ -91,9 +91,7 @@ export default function HomePage() {
               estando entre os melhores profissionais do ramo na região de Florianópolis.
             </p>
             <p>
-              Meu intuito como profissional é buscar por soluções com eficiência, garantindo segurança e conforto ao longo do
-              decorrer do processo. Dando vida às necessidades da sua obra, seja na elaboração dos projetos, na execução de
-              gerenciamento ou na regularização do imovel.
+            Meu intuito como profissional é buscar soluções eficientes, garantindo segurança e conforto ao longo do processo.
             </p>
           </div>
         </div>
@@ -107,7 +105,7 @@ export default function HomePage() {
             <div className="box-servico">
               <FontAwesomeIcon icon={faBuilding} size="2x" />
               <h1>Gerência da obra</h1>
-              <p>Administração e gestão de todas as etapas da obra, esde a fundação até a entrega da chave.</p>
+              <p>Administração e gestão de todas as etapas da obra, desde a fundação até a entrega da chave.</p>
             </div>
             <div className="box-servico">
               <FontAwesomeIcon icon={faCommentDots} size="2x" />
